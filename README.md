@@ -25,7 +25,7 @@ Ensure you have the following installed:
 1. **Clone the repository**:
 
     ```bash
-    [git clone https://github.com/wahidcs50/Py.X-Automation-.git]
+    git clone https://github.com/wahidcs50/Py.X-Automation-.git
     ```
 
 2. **Create a virtual environment** (optional but recommended):
