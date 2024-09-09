@@ -25,7 +25,7 @@ Ensure you have the following installed:
 1. **Clone the repository**:
 
     ```bash
-    git clone https://github.com/yourusername/selenium-phyx-automation.git
+    [git clone https://github.com/yourusername/selenium-phyx-automation.git](https://github.com/wahidcs50/Py.X-Automation-.git)
     cd selenium-phyx-automation
     ```
 
