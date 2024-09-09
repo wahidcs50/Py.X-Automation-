@@ -1,20 +1,58 @@
-# Selenium-Based Simulation Automation for Phy-X Net
+# Selenium Web Automation for Phy-X Shielding Simulation
 
-This project automates the process of logging into the Phy-X Net website, submitting shielding simulation data, and exporting the results using Selenium WebDriver.
+This project automates the interaction with the [Phy-X shielding simulator](https://phy-x.net/module/physics/shielding/) using Selenium. The script logs into the website, fills in required data fields from a CSV file, runs simulations, and exports the results to an Excel file.
 
-## Features
+## Table of Contents
 
-- Automated login to the Phy-X Net website.
-- Automated data entry of composition and density from a CSV file.
-- Checkbox processing and terms acceptance.
-- Automated simulation initiation and data export to Excel.
-  
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Environment Variables](#environment-variables)
+- [Running the Script](#running-the-script)
+- [Project Structure](#project-structure)
+- [Troubleshooting](#troubleshooting)
+- [License](#license)
+
 ## Prerequisites
 
-To run this project, ensure you have the following:
+Ensure you have the following installed:
 
 - Python 3.8 or higher
 - Google Chrome browser
-- ChromeDriver (matching the installed Chrome version)
-- Required Python packages (see below)
-  
+- Chrome WebDriver (must match your Chrome browser version)
+
+## Installation
+
+1. **Clone the repository**:
+
+    ```bash
+    git clone https://github.com/yourusername/selenium-phyx-automation.git
+    cd selenium-phyx-automation
+    ```
+
+2. **Create a virtual environment** (optional but recommended):
+
+    ```bash
+    python -m venv .venv
+    source .venv/bin/activate   # On Windows, use .venv\Scripts\activate
+    ```
+
+3. **Install dependencies**:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+4. **Set up Chrome WebDriver**:
+
+   Download the Chrome WebDriver from [here](https://chromedriver.chromium.org/downloads) and ensure it matches your Chrome version. Place the driver path in your environment file or local configuration.
+
+## Environment Variables
+
+Set the following variables in a `.env` file located in the project root:
+
+```env
+DRIVER_PATH=/path/to/chromedriver
+DATA_PATH=/path/to/input_data.csv
+PHY_USERNAME=your_email@example.com
+PASSWORD=your_password
+
